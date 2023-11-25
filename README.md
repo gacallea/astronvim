@@ -1,6 +1,6 @@
 # My AstroNvim Setup
 
-This is my personal [AstroNVim](https://astronvim.com) configuration. A great IDE
+This is my personal [AstroNvim](https://astronvim.com) configuration. A great IDE
 built on top of [Neovim](https://neovim.io/).
 
 **Highly reccomended!!** Easy to get started and even easier to customize:
