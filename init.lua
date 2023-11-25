@@ -52,13 +52,13 @@ return {
     servers = {
       "sourcekit",
     },
-    -- config = {
-    --   sourcekit = {
-    --     cmd = { "sourcekit-lsp" },
-    --     filetypes = { "swift", "c", "cpp", "objective-c", "objective-cpp" },
-    --     root_dir = function() return require("lspconfig.util").root_pattern("Package.swift", ".git") end,
-    --   },
-    -- },
+    config = {
+      sourcekit = {
+        cmd = { "sourcekit-lsp" },
+        filetypes = { "swift", "objective-c", "objective-cpp" },
+        -- root_dir = function() return require("lspconfig.util").root_pattern("Package.swift", ".git") end,
+      },
+    },
   },
 
   -- Configure require("lazy").setup() options
