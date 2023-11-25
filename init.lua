@@ -18,7 +18,7 @@ return {
   },
 
   -- Set colorscheme to use
-  colorscheme = "astrodark",
+  colorscheme = "catppuccin",
 
   -- Diagnostics configuration (for vim.diagnostics.config({...})) when diagnostics are on
   diagnostics = {
@@ -50,8 +50,15 @@ return {
     },
     -- enable servers that you already have installed without mason
     servers = {
-      -- "pyright"
+      --    "sourcekit",
     },
+    -- config = {
+    --   sourcekit = {
+    --     cmd = { "sourcekit-lsp" },
+    --     filetypes = { "swift", "c", "cpp", "objective-c", "objective-cpp" },
+    --     root_dir = function() return require("lspconfig.util").root_pattern("Package.swift", ".git") end,
+    --   },
+    -- },
   },
 
   -- Configure require("lazy").setup() options
