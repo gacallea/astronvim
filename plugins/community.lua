@@ -11,7 +11,7 @@ return {
   { import = "astrocommunity.utility.noice-nvim" },
 
   -- languages support
-  -- { import = "astrocommunity.pack.swift" },
+  -- { import = "astrocommunity.pack.swift" }, -- this is effing broken...
   { import = "astrocommunity.pack.haskell" },
   { import = "astrocommunity.pack.lua" },
   { import = "astrocommunity.pack.bash" },
