@@ -20,15 +20,12 @@ return {
   { import = "astrocommunity.pack.markdown" },
   { import = "astrocommunity.pack.yaml" },
   { import = "astrocommunity.pack.toml" },
-  { import = "astrocommunity.pack.typescript" },
   { import = "astrocommunity.pack.tailwindcss" },
-  -- { import = "astrocommunity.pack.python" },
   -- { import = "astrocommunity.pack.docker" },
 
   -- lsp + diagnostics + testing + debugging
   { import = "astrocommunity.test.neotest" },
-  { import = "astrocommunity.indent.mini-indentscope" },
-  { import = "astrocommunity.diagnostics.trouble-nvim" },
+  -- { import = "astrocommunity.diagnostics.trouble-nvim" },
   { import = "astrocommunity.diagnostics.lsp_lines-nvim" },
 
   -- editor and editing supprt
