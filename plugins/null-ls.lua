@@ -9,6 +9,7 @@ return {
     -- https://github.com/jose-elias-alvarez/null-ls.nvim/tree/main/lua/null-ls/builtins/diagnostics
     config.sources = {
       -- Set a formatter
+      null_ls.builtins.diagnostics.standardjs,
       null_ls.builtins.diagnostics.markdownlint,
       null_ls.builtins.formatting.swiftformat,
       null_ls.builtins.diagnostics.swiftlint,
