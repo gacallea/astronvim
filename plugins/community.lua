@@ -7,26 +7,24 @@ return {
   -- colors and UI/UX
   { import = "astrocommunity.colorscheme.catppuccin" },
   { import = "astrocommunity.color.ccc-nvim" },
-  { import = "astrocommunity.color.mini-hipatterns" },
   { import = "astrocommunity.utility.noice-nvim" },
 
   -- languages support
   -- { import = "astrocommunity.pack.swift" }, -- this is effing broken...
+  -- { import = "astrocommunity.pack.elm" }, -- this I will contrib soon...
   { import = "astrocommunity.pack.haskell" },
   { import = "astrocommunity.pack.lua" },
   { import = "astrocommunity.pack.bash" },
-  { import = "astrocommunity.pack.html-css" },
   { import = "astrocommunity.pack.json" },
   { import = "astrocommunity.pack.markdown" },
   { import = "astrocommunity.pack.yaml" },
   { import = "astrocommunity.pack.toml" },
+  { import = "astrocommunity.pack.html-css" },
   { import = "astrocommunity.pack.tailwindcss" },
-  -- { import = "astrocommunity.pack.docker" },
 
   -- lsp + diagnostics + testing + debugging
   { import = "astrocommunity.test.neotest" },
-  -- { import = "astrocommunity.diagnostics.trouble-nvim" },
-  { import = "astrocommunity.diagnostics.lsp_lines-nvim" },
+  { import = "astrocommunity.diagnostics.trouble-nvim" },
 
   -- editor and editing supprt
   { import = "astrocommunity.project.project-nvim" },
@@ -35,7 +33,7 @@ return {
   { import = "astrocommunity.editing-support.todo-comments-nvim" },
   { import = "astrocommunity.editing-support.rainbow-delimiters-nvim" },
   { import = "astrocommunity.register.nvim-neoclip-lua" },
-  { import = "astrocommunity.markdown-and-latex.peek-nvim" },
+  { import = "astrocommunity.markdown-and-latex.markdown-preview-nvim" },
 
   -- git
   { import = "astrocommunity.git.diffview-nvim" },
