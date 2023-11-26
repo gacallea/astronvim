@@ -2,28 +2,6 @@ return {
   -- You can also add new plugins here as well:
   -- Add plugins, the lazy syntax
 
-  -- [[ ZETTELKASTEN ]]
-  -- https://zettelkasten.de/introduction/
-  -- https://github.com/mickael-menu/zk
-  {
-    "mickael-menu/zk-nvim",
-    config = function()
-      require("zk").setup {
-        picker = "telescope",
-        lsp = {
-          config = {
-            cmd = { "zk", "lsp" },
-            name = "zk",
-          },
-          auto_attach = {
-            enabled = true,
-            filetypes = { "markdown" },
-          },
-        },
-      }
-    end,
-  },
-
   -- [[ UI/UX ]]
   {
     "echasnovski/mini.map",

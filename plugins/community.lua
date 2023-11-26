@@ -1,6 +1,7 @@
 return {
   -- Add the community repository of plugin specifications
   "AstroNvim/astrocommunity",
+  -- { "AstroNvim/astrocommunity", dev = true },
   -- example of importing a plugin, comment out to use it or add your own
   -- available plugins can be found at https://github.com/AstroNvim/astrocommunity
 
@@ -10,8 +11,8 @@ return {
   { import = "astrocommunity.utility.noice-nvim" },
 
   -- languages support
-  -- { import = "astrocommunity.pack.swift" }, -- this is effing broken...
-  -- { import = "astrocommunity.pack.elm" }, -- this I will contrib soon...
+  -- { import = "astrocommunity.pack.swift" }, -- this is currently broken...
+  -- { import = "astrocommunity.pack.elm" }, -- https://github.com/AstroNvim/astrocommunity/pull/653
   { import = "astrocommunity.pack.haskell" },
   { import = "astrocommunity.pack.lua" },
   { import = "astrocommunity.pack.bash" },
@@ -39,4 +40,7 @@ return {
   { import = "astrocommunity.git.diffview-nvim" },
   { import = "astrocommunity.git.blame-nvim" },
   { import = "astrocommunity.git.octo-nvim" },
+
+  -- writing
+  -- { import = "astrocommunity.note-taking.zk-nvim" }, -- https://github.com/AstroNvim/astrocommunity/pull/654
 }

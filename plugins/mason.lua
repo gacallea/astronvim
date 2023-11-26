@@ -21,7 +21,6 @@ return {
         "standardjs",
         "ts-standard",
         "markdownlint",
-        "zk",
       })
     end,
   },
