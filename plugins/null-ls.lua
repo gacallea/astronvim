@@ -22,8 +22,6 @@ return {
       null_ls.builtins.diagnostics.standardjs,
       null_ls.builtins.formatting.standardts,
       null_ls.builtins.diagnostics.markdownlint,
-      null_ls.builtins.formatting.swiftformat,
-      null_ls.builtins.diagnostics.swiftlint,
     }
     return config -- return final config table
   end,
