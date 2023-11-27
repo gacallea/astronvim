@@ -1,6 +1,7 @@
 return {
   -- Add the community repository of plugin specifications
   "AstroNvim/astrocommunity",
+
   -- { "AstroNvim/astrocommunity", dev = true },
   -- https://github.com/AstroNvim/astrocommunity/blob/main/CONTRIBUTING.md
   -- https://www.conventionalcommits.org/
@@ -29,7 +30,7 @@ return {
   { import = "astrocommunity.test.neotest" },
   { import = "astrocommunity.diagnostics.trouble-nvim" },
 
-  -- editor and editing supprt
+  -- editor and editing support
   { import = "astrocommunity.project.project-nvim" },
   { import = "astrocommunity.project.nvim-spectre" },
   { import = "astrocommunity.editing-support.nvim-devdocs" },
