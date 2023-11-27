@@ -2,7 +2,9 @@ return {
   -- Add the community repository of plugin specifications
   "AstroNvim/astrocommunity",
   -- { "AstroNvim/astrocommunity", dev = true },
-  -- example of importing a plugin, comment out to use it or add your own
+  -- https://github.com/AstroNvim/astrocommunity/blob/main/CONTRIBUTING.md
+  -- https://www.conventionalcommits.org/
+
   -- available plugins can be found at https://github.com/AstroNvim/astrocommunity
 
   -- colors and UI/UX
