@@ -17,6 +17,13 @@ return {
           "tsx",
         },
       },
+
+      null_ls.builtins.formatting.swift_format.with {
+        disabled_filetypes = {
+          "swift",
+        },
+      },
+
       -- Set a formatter
       null_ls.builtins.formatting.standardjs,
       null_ls.builtins.diagnostics.standardjs,
