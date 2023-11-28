@@ -16,7 +16,7 @@ return {
   -- languages support
   -- { import = "astrocommunity.pack.swift" }, -- https://github.com/AstroNvim/astrocommunity/pull/656
   -- { import = "astrocommunity.pack.elm" }, -- https://github.com/AstroNvim/astrocommunity/pull/653
-  { import = "astrocommunity.pack.haskell" },
+  { import = "astrocommunity.pack.haskell" }, -- https://github.com/AstroNvim/astrocommunity/pull/658
   { import = "astrocommunity.pack.lua" },
   { import = "astrocommunity.pack.bash" },
   { import = "astrocommunity.pack.json" },
