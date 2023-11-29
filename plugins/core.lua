@@ -29,7 +29,7 @@ return {
   },
 
   -- required by haskell-tools
-  -- { "luc-tielen/telescope_hoogle", optional = false }, -- https://github.com/AstroNvim/astrocommunity/pull/658
+  { "luc-tielen/telescope_hoogle" }, -- https://github.com/AstroNvim/astrocommunity/pull/658
 
   -- You can disable default plugins as follows:
   -- { "max397574/better-escape.nvim", enabled = false },
