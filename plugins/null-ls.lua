@@ -5,20 +5,20 @@ return {
     local null_ls = require "null-ls"
 
     -- Check supported formatters and linters
-    -- https://github.com/jose-elias-alvarez/null-ls.nvim/tree/main/lua/null-ls/builtins/formatting
-    -- https://github.com/jose-elias-alvarez/null-ls.nvim/tree/main/lua/null-ls/builtins/diagnostics
     config.sources = {
       -- disable prettierd for these filestypes
       null_ls.builtins.formatting.prettierd.with {
         disabled_filetypes = {
           "markdown",
-          "typescript",
           "javascript",
+          "jsx",
+          "typescript",
           "tsx",
         },
       },
 
       -- disable Apple's Swift Format for swift files
+      -- you don't need this, it's a just in case example
       -- null_ls.builtins.formatting.swift_format.with {
       --   disabled_filetypes = {
       --     "swift",
