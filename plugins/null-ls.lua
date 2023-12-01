@@ -18,6 +18,7 @@ return {
         },
       },
 
+      -- disable Apple's Swift Format for swift files
       -- null_ls.builtins.formatting.swift_format.with {
       --   disabled_filetypes = {
       --     "swift",
@@ -25,11 +26,14 @@ return {
       -- },
 
       -- Set a formatter
-      null_ls.builtins.diagnostics.markdownlint,
       null_ls.builtins.formatting.standardjs,
-      null_ls.builtins.diagnostics.standardjs,
       null_ls.builtins.formatting.standardts,
-      null_ls.builtins.formatting.swiftformat,
+      null_ls.builtins.formatting.swiftformat, -- https://github.com/nicklockwood/SwiftFormat
+      -- null_ls.builtins.formatting.swift_format, -- https://github.com/apple/swift-format
+
+      -- Set a linter
+      null_ls.builtins.diagnostics.markdownlint,
+      null_ls.builtins.diagnostics.standardjs,
       null_ls.builtins.diagnostics.swiftlint,
     }
     return config -- return final config table
