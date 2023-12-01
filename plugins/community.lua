@@ -20,11 +20,11 @@ return {
   { import = "astrocommunity.pack.lua" },
   { import = "astrocommunity.pack.bash" },
   { import = "astrocommunity.pack.json" },
-  { import = "astrocommunity.pack.markdown" },
   { import = "astrocommunity.pack.yaml" },
   { import = "astrocommunity.pack.toml" },
   { import = "astrocommunity.pack.html-css" },
   { import = "astrocommunity.pack.tailwindcss" },
+  { import = "astrocommunity.pack.markdown" },
 
   -- lsp + diagnostics + testing + debugging
   { import = "astrocommunity.test.neotest" },
