@@ -17,14 +17,6 @@ return {
         },
       },
 
-      -- disable Apple's Swift Format for swift files
-      -- you don't need this, it's a just in case example
-      -- null_ls.builtins.formatting.swift_format.with {
-      --   disabled_filetypes = {
-      --     "swift",
-      --   },
-      -- },
-
       -- Set a formatter
       null_ls.builtins.formatting.standardjs,
       null_ls.builtins.formatting.standardts,
