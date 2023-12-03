@@ -84,6 +84,7 @@ return {
       callback = function()
         local exclude_ft = {
           "qf",
+          "aerial",
           "neo-tree",
           "toggleterm",
           "TelescopePrompt",
