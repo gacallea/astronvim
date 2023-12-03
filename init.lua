@@ -94,10 +94,8 @@ return {
 
         local map = require "mini.map"
         if vim.tbl_contains(exclude_ft, vim.o.filetype) then
-          -- vim.g.minimap_disable = true
           map.close()
         elseif vim.o.buftype == "" then
-          -- vim.g.minimap_disable = false
           map.open()
         end
       end,
