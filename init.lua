@@ -76,17 +76,31 @@ return {
   -- augroups/autocommands and custom filetypes also this just pure lua so
   -- anything that doesn't fit in the normal config locations above can go here
   polish = function()
-    -- Set up custom filetypes
-    -- vim.filetype.add {
-    --   extension = {
-    --     foo = "fooscript",
-    --   },
-    --   filename = {
-    --     ["Foofile"] = "fooscript",
-    --   },
-    --   pattern = {
-    --     ["~/%.config/foo/.*"] = "fooscript",
-    --   },
-    -- }
+    vim.api.nvim_create_augroup("autoopenminimap", { clear = true })
+    vim.api.nvim_create_autocmd({ "BufEnter", "Filetype" }, {
+      desc = "Open mini.map and exclude some filetypes",
+      pattern = { "*" },
+      group = "autoopenminimap",
+      callback = function()
+        local exclude_ft = {
+          "qf",
+          "neo-tree",
+          "toggleterm",
+          "TelescopePrompt",
+          "alpha",
+          "netrw",
+          "trouble",
+        }
+
+        local map = require "mini.map"
+        if vim.tbl_contains(exclude_ft, vim.o.filetype) then
+          vim.g.minimap_disable = true
+          map.close()
+        elseif vim.o.buftype == "" then
+          vim.g.minimap_disable = false
+          map.open()
+        end
+      end,
+    })
   end,
 }
