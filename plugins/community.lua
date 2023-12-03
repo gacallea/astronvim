@@ -9,8 +9,9 @@ return {
   -- available plugins can be found at https://github.com/AstroNvim/astrocommunity
 
   -- colors and UI/UX
+  { import = "astrocommunity.colorscheme.catppuccin" },
   {
-    import = "astrocommunity.colorscheme.catppuccin",
+    "catppuccin",
     opts = {
       background = { -- :h background
         light = "latte",
