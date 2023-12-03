@@ -21,6 +21,42 @@ return {
   },
   { import = "astrocommunity.color.ccc-nvim" },
   { import = "astrocommunity.utility.noice-nvim" },
+  { import = "astrocommunity.split-and-window.edgy-nvim" },
+  {
+    "folke/edgy.nvim",
+    opts = {
+      exit_when_last = true,
+      animate = {
+        enabled = false,
+      },
+      bottom = {
+        { ft = "qf", title = "QuickFix" },
+        {
+          ft = "help",
+          size = { height = 20 },
+          -- don't open help files in edgy that we're editing
+          filter = function(buf) return vim.bo[buf].buftype == "help" end,
+        },
+      },
+      left = {
+        {
+          title = "Files",
+          ft = "neo-tree",
+          filter = function(buf) return vim.b[buf].neo_tree_source == "filesystem" end,
+          pinned = true,
+          open = "Neotree position=left filesystem",
+          size = { height = 0.5 },
+        },
+        "neo-tree",
+        {
+          ft = "aerial",
+          title = "Symbol Outline",
+          pinned = true,
+          open = function() require("aerial").open() end,
+        },
+      },
+    },
+  },
   { import = "astrocommunity.split-and-window.mini-map" },
   { import = "astrocommunity.bars-and-lines.smartcolumn-nvim" },
   {
