@@ -21,6 +21,14 @@ return {
   { import = "astrocommunity.color.ccc-nvim" },
   { import = "astrocommunity.utility.noice-nvim" },
   { import = "astrocommunity.split-and-window.mini-map" },
+  { import = "astrocommunity.bars-and-lines.smartcolumn-nvim" },
+  {
+    "m4xshen/smartcolumn.nvim",
+    opts = {
+      colorcolumn = 120,
+      disabled_filetypes = { "help" },
+    },
+  },
 
   -- languages support
   { import = "astrocommunity.pack.swift" },
