@@ -20,7 +20,7 @@ return {
   },
   { import = "astrocommunity.color.ccc-nvim" },
   { import = "astrocommunity.utility.noice-nvim" },
-  { import = "astrocommunity.split-and-window.mini-map" },
+  -- { import = "astrocommunity.split-and-window.mini-map" }, -- https://github.com/AstroNvim/astrocommunity/pull/665
 
   -- languages support
   { import = "astrocommunity.pack.swift" },
