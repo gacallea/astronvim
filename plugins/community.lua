@@ -96,6 +96,7 @@ return {
   { import = "astrocommunity.git.diffview-nvim" },
   { import = "astrocommunity.git.blame-nvim" },
   { import = "astrocommunity.git.octo-nvim" },
+  { import = "astrocommunity.git.gitlinker-nvim" },
 
   -- writing
   { import = "astrocommunity.note-taking.zk-nvim" },
