@@ -72,7 +72,6 @@ return {
   { import = "astrocommunity.pack.markdown" },
 
   -- lsp + diagnostics + testing + debugging
-  { import = "astrocommunity.test.neotest" },
   { import = "astrocommunity.diagnostics.trouble-nvim" },
 
   -- editor and editing support
