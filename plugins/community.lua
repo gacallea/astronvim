@@ -10,15 +10,6 @@ return {
 
   -- colors and UI/UX
   { import = "astrocommunity.colorscheme.catppuccin" },
-  {
-    "catppuccin",
-    opts = {
-      background = { -- :h background
-        light = "latte",
-        dark = "mocha",
-      },
-    },
-  },
   { import = "astrocommunity.color.ccc-nvim" },
   { import = "astrocommunity.utility.noice-nvim" },
   { import = "astrocommunity.split-and-window.edgy-nvim" },
