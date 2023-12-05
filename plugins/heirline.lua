@@ -18,7 +18,14 @@ return {
         status.component.treesitter(),
         status.component.nav(),
         status.component.builder {
-          { provider = os.date "%I:%M:%S %p" },
+          {
+            provider = function() return " " .. os.date "%I:%M:%S %p" end,
+            update = {
+              "User",
+              pattern = "UpdateTime",
+              callback = vim.schedule_wrap(function() vim.cmd.redrawstatus() end),
+            },
+          },
           surround = { separator = "right", color = "bg" },
         },
         status.component.mode { surround = { separator = "right" } },
