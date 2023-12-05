@@ -68,6 +68,7 @@ return {
   },
 
   -- languages support
+  { import = "astrocommunity.pack.swift" },
   { import = "astrocommunity.pack.elm" },
   { import = "astrocommunity.pack.haskell" },
   { import = "astrocommunity.pack.lua" },

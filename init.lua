@@ -49,16 +49,8 @@ return {
       -- end
     },
     -- enable servers that you already have installed without mason
-    servers = {
-      "sourcekit",
-    },
-    config = {
-      sourcekit = {
-        cmd = { "sourcekit-lsp" },
-        filetypes = { "swift", "objective-c", "objective-cpp" },
-        -- root_dir = function() return require("lspconfig.util").root_pattern("Package.swift", ".git") end,
-      },
-    },
+    servers = {},
+    config = {},
   },
 
   -- Configure require("lazy").setup() options
