@@ -42,13 +42,13 @@ require("lazy").setup {
     { import = "astrocommunity.pack.markdown" },
 
     -- lsp + diagnostics + testing + debugging
-    -- { import = "astrocommunity.diagnostics.trouble-nvim" },
+    { import = "astrocommunity.diagnostics.trouble-nvim" },
 
     -- editor and editing support
-    -- { import = "astrocommunity.project.project-nvim" },
-    -- { import = "astrocommunity.project.nvim-spectre" },
+    { import = "astrocommunity.project.project-nvim" },
+    { import = "astrocommunity.project.nvim-spectre" },
     -- { import = "astrocommunity.editing-support.nvim-devdocs" },
-    -- { import = "astrocommunity.editing-support.todo-comments-nvim" },
+    { import = "astrocommunity.editing-support.todo-comments-nvim" },
     -- { import = "astrocommunity.editing-support.rainbow-delimiters-nvim" },
     -- { import = "astrocommunity.register.nvim-neoclip-lua" },
     -- { import = "astrocommunity.markdown-and-latex.markdown-preview-nvim" },
