@@ -1,5 +1,3 @@
-if true then return {} end -- REMOVE THIS LINE TO ACTIVATE THIS FILE
-
 -- AstroCore provides a central place to modify mappings set up as well as which-key menu titles
 return {
   "AstroNvim/astrocore",
