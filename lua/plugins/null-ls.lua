@@ -20,6 +20,7 @@ return {
       },
 
       -- Set a formatter
+      null_ls.builtins.formatting.markdownlint,
       null_ls.builtins.formatting.standardjs,
       null_ls.builtins.formatting.standardts,
       null_ls.builtins.formatting.swiftformat, -- https://github.com/nicklockwood/SwiftFormat
