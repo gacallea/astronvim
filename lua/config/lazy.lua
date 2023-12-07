@@ -26,7 +26,7 @@ require("lazy").setup {
     { import = "astrocommunity.utility.noice-nvim" },
     -- { import = "astrocommunity.split-and-window.edgy-nvim" },
     -- { import = "astrocommunity.split-and-window.mini-map" },
-    -- { import = "astrocommunity.bars-and-lines.smartcolumn-nvim" },
+    { import = "astrocommunity.bars-and-lines.smartcolumn-nvim" },
 
     -- languages support
     -- { import = "astrocommunity.pack.swift" },
@@ -49,14 +49,14 @@ require("lazy").setup {
     { import = "astrocommunity.project.nvim-spectre" },
     -- { import = "astrocommunity.editing-support.nvim-devdocs" },
     { import = "astrocommunity.editing-support.todo-comments-nvim" },
-    -- { import = "astrocommunity.editing-support.rainbow-delimiters-nvim" },
-    -- { import = "astrocommunity.register.nvim-neoclip-lua" },
-    -- { import = "astrocommunity.markdown-and-latex.markdown-preview-nvim" },
+    { import = "astrocommunity.editing-support.rainbow-delimiters-nvim" },
+    { import = "astrocommunity.register.nvim-neoclip-lua" },
+    { import = "astrocommunity.markdown-and-latex.markdown-preview-nvim" },
 
     -- git
-    -- { import = "astrocommunity.git.diffview-nvim" },
-    -- { import = "astrocommunity.git.blame-nvim" },
-    -- { import = "astrocommunity.git.octo-nvim" },
+    { import = "astrocommunity.git.diffview-nvim" },
+    { import = "astrocommunity.git.blame-nvim" },
+    { import = "astrocommunity.git.octo-nvim" },
     -- { import = "astrocommunity.git.gitlinker-nvim" },
     -- { import = "astrocommunity.git.gist-nvim" },
 

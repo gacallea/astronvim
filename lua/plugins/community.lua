@@ -4,20 +4,45 @@ return {
 
   -- This is a good place to do further customize the options set by the community plugins/packs
   -- {
-  --   "catppuccin/nvim",
+  --   "folke/edgy.nvim",
   --   opts = {
-  --     integrations = {
-  --       sandwich = false,
-  --       noice = true,
-  --       mini = true,
-  --       leap = true,
-  --       markdown = true,
-  --       neotest = true,
-  --       cmp = true,
-  --       overseer = true,
-  --       lsp_trouble = true,
-  --       rainbow_delimiters = true,
+  --     exit_when_last = true,
+  --     animate = {
+  --       enabled = false,
+  --     },
+  --     bottom = {
+  --       { ft = "qf", title = "QuickFix" },
+  --       {
+  --         ft = "help",
+  --         size = { height = 20 },
+  --         -- don't open help files in edgy that we're editing
+  --         filter = function(buf) return vim.bo[buf].buftype == "help" end,
+  --       },
+  --     },
+  --     left = {
+  --       {
+  --         title = "Files",
+  --         ft = "neo-tree",
+  --         filter = function(buf) return vim.b[buf].neo_tree_source == "filesystem" end,
+  --         pinned = true,
+  --         open = "Neotree position=left filesystem",
+  --         size = { height = 0.5 },
+  --       },
+  --       "neo-tree",
+  --       {
+  --         ft = "aerial",
+  --         title = "Symbol Outline",
+  --         pinned = true,
+  --         open = function() require("aerial").open() end,
+  --       },
   --     },
   --   },
   -- },
+  {
+    "m4xshen/smartcolumn.nvim",
+    opts = {
+      colorcolumn = 120,
+      disabled_filetypes = { "help" },
+    },
+  },
 }

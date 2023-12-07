@@ -11,6 +11,7 @@ return {
       null_ls.builtins.formatting.prettierd.with {
         disabled_filetypes = {
           "markdown",
+          "markdown_inline",
           "javascript",
           "jsx",
           "typescript",
