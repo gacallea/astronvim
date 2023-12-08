@@ -22,7 +22,6 @@ require("lazy").setup {
 
     -- colors and UI/UX
     { import = "astrocommunity.colorscheme.catppuccin" },
-    -- { import = "astrocommunity.color.ccc-nvim" },
     { import = "astrocommunity.utility.noice-nvim" },
     -- { import = "astrocommunity.split-and-window.edgy-nvim" },
     -- { import = "astrocommunity.split-and-window.mini-map" },
@@ -47,11 +46,11 @@ require("lazy").setup {
     -- editor and editing support
     { import = "astrocommunity.project.project-nvim" },
     { import = "astrocommunity.project.nvim-spectre" },
-    -- { import = "astrocommunity.editing-support.nvim-devdocs" },
+    { import = "astrocommunity.editing-support.nvim-devdocs" },
     { import = "astrocommunity.editing-support.todo-comments-nvim" },
     { import = "astrocommunity.editing-support.rainbow-delimiters-nvim" },
     { import = "astrocommunity.register.nvim-neoclip-lua" },
-    { import = "astrocommunity.markdown-and-latex.markdown-preview-nvim" },
+    { import = "astrocommunity.markdown-and-latex.glow-nvim" },
 
     -- git
     { import = "astrocommunity.git.diffview-nvim" },
