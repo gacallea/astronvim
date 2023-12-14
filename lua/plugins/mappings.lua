@@ -9,14 +9,14 @@ return {
         -- second key is the lefthand side of the map
 
         -- navigate buffer tabs with `option left arrow` and `option right arrow`
-        ["<M-Left>"] = {
-          function() require("astronvim.utils.buffer").nav(vim.v.count > 0 and vim.v.count or 1) end,
-          desc = "Next buffer",
-        },
-        ["<M-Right>"] = {
-          function() require("astronvim.utils.buffer").nav(-(vim.v.count > 0 and vim.v.count or 1)) end,
-          desc = "Previous buffer",
-        },
+        -- ["<M-Left>"] = {
+        --   function() require("astronvim.utils.buffer").nav(vim.v.count > 0 and vim.v.count or 1) end,
+        --   desc = "Next buffer",
+        -- },
+        -- ["<M-Right>"] = {
+        --   function() require("astronvim.utils.buffer").nav(-(vim.v.count > 0 and vim.v.count or 1)) end,
+        --   desc = "Previous buffer",
+        -- },
 
         -- mappings seen under group name "Buffer"
         ["<leader>bD"] = {
@@ -34,7 +34,7 @@ return {
         -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
 
         -- MY MAPPINGS
-        ["<leader>P"] = { ":Telescope projects<cr>", desc = "Projects" },
+        -- ["<leader>P"] = { ":Telescope projects<cr>", desc = "Projects" },
       },
       t = {
         -- setting a mapping to false will disable it
