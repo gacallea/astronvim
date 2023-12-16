@@ -30,7 +30,7 @@ return {
   },
 
   -- required by haskell-tools
-  -- { "luc-tielen/telescope_hoogle" },
+  { "luc-tielen/telescope_hoogle" },
 
   -- You can disable default plugins as follows:
   -- { "max397574/better-escape.nvim", enabled = false },

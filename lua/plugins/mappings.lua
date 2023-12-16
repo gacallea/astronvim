@@ -34,7 +34,7 @@ return {
         -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
 
         -- MY MAPPINGS
-        -- ["<leader>P"] = { ":Telescope projects<cr>", desc = "Projects" },
+        ["<leader>P"] = { ":Telescope projects<cr>", desc = "Projects" },
       },
       t = {
         -- setting a mapping to false will disable it
